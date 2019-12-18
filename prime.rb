@@ -1,13 +1,10 @@
 def prime?(num)
-  if num < 1 
+  if num < 2 
     return false 
   end
-  if num == 1 
-    return true 
-  end
-  i = 1 
+  i = 2 
   while i < num do 
-    if num % i == 0 && num != 1
+    if num % i == 0
       return false 
     end
     i += 1
