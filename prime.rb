@@ -2,6 +2,9 @@ def prime?(num)
   if num < 1 
     return false 
   end
+  if num == 1 
+    return true 
+  end
   i = 1 
   while i < num do 
     if num % i == 0 && num != 1
